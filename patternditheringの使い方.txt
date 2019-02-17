@@ -10,6 +10,7 @@ PatternDither
 	README.meに同意し、
 	patterndithering.dllは patterndithering.anm と同じところか exedit.auf と同じところにおいてください。
 
+スクリプトの説明
 BayerDither**
 
 	バイヤー型のディザパターンを用いてディザリングします。おそらく一番有名なパターンです。
