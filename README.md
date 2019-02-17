@@ -1,6 +1,6 @@
 # PatternDithering
 
-オブジェクトにディザリングを適用するAviutlのScriptです。
+ディザリングを適用するAviutlのScriptです。
 Aviutlのバージョンは1.00、exeditのバージョンは0.92にか確認していませんがまぁ多分みんなこのバージョンを使ってると思うので大丈夫だと思います。
 OSもwindows10しか確認していません動かなかったらTwitterとかで教えてください。
 
