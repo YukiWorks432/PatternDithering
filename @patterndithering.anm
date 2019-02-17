@@ -2,10 +2,10 @@
 --track0:size,1,10,1,1
 --track1:RGB,0,1,1,1
 --track2:alpha,-1,1,0,1
---dialog:–¾/col,local col1=0xffffff;ˆÃ/col,local col2=0x000000;
+--dialog:æ˜/col,local col1=0xffffff;æš—/col,local col2=0x000000;
 package.cpath=package.cpath..";"..obj.getinfo("script_path"):match("(.*\\).*\\").."?.dll"
 bool, patterndithering = pcall(require, "patterndithering");
-if not bool then obj.load("<s50>patterndithering.dll ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½") obj.draw() return end
+if not bool then obj.load("<s50>patterndithering.dll ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸ") obj.draw() return end
 
 patterndithering.bayerdither16(obj.track0,obj.track2,obj.track1,col1,col2)
 
@@ -16,7 +16,7 @@ patterndithering.bayerdither16(obj.track0,obj.track2,obj.track1,col1,col2)
 --track2:alpha,0,1,0,1
 package.cpath=package.cpath..";"..obj.getinfo("script_path"):match("(.*\\).*\\").."?.dll"
 bool, patterndithering = pcall(require, "patterndithering");
-if not bool then obj.load("<s50>patterndithering.dll ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½") obj.draw() return end
+if not bool then obj.load("<s50>patterndithering.dll ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸ") obj.draw() return end
 
 patterndithering.posterizeBayerDither16(obj.track0,obj.track1,obj.track2)
 
@@ -25,10 +25,10 @@ patterndithering.posterizeBayerDither16(obj.track0,obj.track1,obj.track2)
 --track0:size,1,10,1,1
 --track1:RGB,0,1,1,1
 --track2:alpha,-1,1,0,1
---dialog:–¾/col,local col1=0xffffff;ˆÃ/col,local col2=0x000000;
+--dialog:æ˜/col,local col1=0xffffff;æš—/col,local col2=0x000000;
 package.cpath=package.cpath..";"..obj.getinfo("script_path"):match("(.*\\).*\\").."?.dll"
 bool, patterndithering = pcall(require, "patterndithering");
-if not bool then obj.load("<s50>patterndithering.dll ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½") obj.draw() return end
+if not bool then obj.load("<s50>patterndithering.dll ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸ") obj.draw() return end
 
 patterndithering.bayerdither64(obj.track0,obj.track2,obj.track1,col1,col2)
 
@@ -39,7 +39,7 @@ patterndithering.bayerdither64(obj.track0,obj.track2,obj.track1,col1,col2)
 --track2:alpha,0,1,0,1
 package.cpath=package.cpath..";"..obj.getinfo("script_path"):match("(.*\\).*\\").."?.dll"
 bool, patterndithering = pcall(require, "patterndithering");
-if not bool then obj.load("<s50>patterndithering.dll ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½") obj.draw() return end
+if not bool then obj.load("<s50>patterndithering.dll ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸ") obj.draw() return end
 
 patterndithering.posterizeBayerDither64(obj.track0,obj.track1,obj.track2)
 
@@ -48,10 +48,10 @@ patterndithering.posterizeBayerDither64(obj.track0,obj.track1,obj.track2)
 --track0:size,1,10,1,1
 --track1:RGB,0,1,1,1
 --track2:alpha,-1,1,0,1
---dialog:–¾/col,local col1=0xffffff;ˆÃ/col,local col2=0x000000;
+--dialog:æ˜/col,local col1=0xffffff;æš—/col,local col2=0x000000;
 package.cpath=package.cpath..";"..obj.getinfo("script_path"):match("(.*\\).*\\").."?.dll"
 bool, patterndithering = pcall(require, "patterndithering");
-if not bool then obj.load("<s50>patterndithering.dll ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½") obj.draw() return end
+if not bool then obj.load("<s50>patterndithering.dll ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸ") obj.draw() return end
 
 patterndithering.clusterdotmatrixdither16(obj.track0,obj.track2,obj.track1,col1,col2)
 
@@ -62,7 +62,7 @@ patterndithering.clusterdotmatrixdither16(obj.track0,obj.track2,obj.track1,col1,
 --track2:alpha,0,1,0,1
 package.cpath=package.cpath..";"..obj.getinfo("script_path"):match("(.*\\).*\\").."?.dll"
 bool, patterndithering = pcall(require, "patterndithering");
-if not bool then obj.load("<s50>patterndithering.dll ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½") obj.draw() return end
+if not bool then obj.load("<s50>patterndithering.dll ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸ") obj.draw() return end
 
 patterndithering.posterizeCDMDither16(obj.track0,obj.track1,obj.track2)
 
@@ -71,10 +71,10 @@ patterndithering.posterizeCDMDither16(obj.track0,obj.track1,obj.track2)
 --track0:size,1,10,1,1
 --track1:RGB,0,1,1,1
 --track2:alpha,-1,1,0,1
---dialog:–¾/col,local col1=0xffffff;ˆÃ/col,local col2=0x000000;
+--dialog:æ˜/col,local col1=0xffffff;æš—/col,local col2=0x000000;
 package.cpath=package.cpath..";"..obj.getinfo("script_path"):match("(.*\\).*\\").."?.dll"
 bool, patterndithering = pcall(require, "patterndithering");
-if not bool then obj.load("<s50>patterndithering.dll ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½") obj.draw() return end
+if not bool then obj.load("<s50>patterndithering.dll ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸ") obj.draw() return end
 
 patterndithering.clusterdotmatrixdither64(obj.track0,obj.track2,obj.track1,col1,col2)
 
@@ -85,7 +85,7 @@ patterndithering.clusterdotmatrixdither64(obj.track0,obj.track2,obj.track1,col1,
 --track2:alpha,0,1,0,1
 package.cpath=package.cpath..";"..obj.getinfo("script_path"):match("(.*\\).*\\").."?.dll"
 bool, patterndithering = pcall(require, "patterndithering");
-if not bool then obj.load("<s50>patterndithering.dll ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½") obj.draw() return end
+if not bool then obj.load("<s50>patterndithering.dll ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸ") obj.draw() return end
 
 patterndithering.posterizeCDMDither64(obj.track0,obj.track1,obj.track2)
 
@@ -93,9 +93,9 @@ patterndithering.posterizeCDMDither64(obj.track0,obj.track1,obj.track2)
 @dither5*3
 --track0:size,1,10,1,1
 --track1:alpha,-1,1,0,1
---dialog:RGB/chk,local rgb=1;–¾/col,local col1=0xffffff;ˆÃ/col,local col2=0x000000;
+--dialog:RGB/chk,local rgb=1;æ˜/col,local col1=0xffffff;æš—/col,local col2=0x000000;
 package.cpath=package.cpath..";"..obj.getinfo("script_path"):match("(.*\\).*\\").."?.dll"
 bool, patterndithering = pcall(require, "patterndithering");
-if not bool then obj.load("<s50>patterndithering.dll ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½") obj.draw() return end
+if not bool then obj.load("<s50>patterndithering.dll ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸ") obj.draw() return end
 
 patterndithering.dither5x3(obj.track0,obj.track1,rgb,col1,col2)
