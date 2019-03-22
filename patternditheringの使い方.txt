@@ -8,7 +8,8 @@ PatternDither
 インストール
 
 	README.meに同意し、
-	patterndithering.dllは patterndithering.anm と同じところか exedit.auf と同じところにおいてください。
+	patterndithering.dllは patterndithering.anm と同じところか exedit.auf と同じところに、
+	libgcc_s_dw2-1.dll libgomp-1.dll libwinpthread-1.dll は exedit.aufと同じところにおいてください。
 
 スクリプトの説明
 BayerDither**
