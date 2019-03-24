@@ -10,6 +10,16 @@ if not bool then obj.load("<s50>patterndithering.dll ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½") ob
 patterndithering.bayerdither16(obj.track0,obj.track2,obj.track1,col1,col2)
 
 
+@BayerDither16OCL
+--track0:RGB,0,1,1,1
+--dialog:–¾/col,local col1=0xffffff;ˆÃ/col,local col2=0x000000;
+package.cpath=package.cpath..";"..obj.getinfo("script_path"):match("(.*\\).*\\").."?.dll"
+local bool, patterndithering = pcall(require, "patterndithering");
+if not bool then obj.load("<s50>oclScripts ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½") obj.draw() return end
+
+patterndithering.bayerdither16OCL(obj.track0, col1, col2)
+
+
 @PosterizeBayerDither16
 --track0:Tone,2,16,4,1
 --track1:RGB,0,1,1,1
@@ -31,6 +41,16 @@ bool, patterndithering = pcall(require, "patterndithering");
 if not bool then obj.load("<s50>patterndithering.dll ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½") obj.draw() return end
 
 patterndithering.bayerdither64(obj.track0,obj.track2,obj.track1,col1,col2)
+
+
+@BayerDither64OCL
+--track0:RGB,0,1,1,1
+--dialog:–¾/col,local col1=0xffffff;ˆÃ/col,local col2=0x000000;
+package.cpath=package.cpath..";"..obj.getinfo("script_path"):match("(.*\\).*\\").."?.dll"
+local bool, patterndithering = pcall(require, "patterndithering");
+if not bool then obj.load("<s50>oclScripts ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½") obj.draw() return end
+
+patterndithering.bayerdither64OCL(obj.track0, col1, col2)
 
 
 @PosterizeBayerDither64
@@ -56,6 +76,16 @@ if not bool then obj.load("<s50>patterndithering.dll ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½") ob
 patterndithering.clusterdotmatrixdither16(obj.track0,obj.track2,obj.track1,col1,col2)
 
 
+@ClusterDotMatrixDither16OCL
+--track0:RGB,0,1,1,1
+--dialog:–¾/col,local col1=0xffffff;ˆÃ/col,local col2=0x000000;
+package.cpath=package.cpath..";"..obj.getinfo("script_path"):match("(.*\\).*\\").."?.dll"
+local bool, patterndithering = pcall(require, "patterndithering");
+if not bool then obj.load("<s50>oclScripts ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½") obj.draw() return end
+
+patterndithering.cdmdither16OCL(obj.track0, col1, col2)
+
+
 @PosterizeClusterDotMatrixDither16
 --track0:Tone,2,16,4,1
 --track1:RGB,0,1,1,1
@@ -77,6 +107,16 @@ bool, patterndithering = pcall(require, "patterndithering");
 if not bool then obj.load("<s50>patterndithering.dll ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½") obj.draw() return end
 
 patterndithering.clusterdotmatrixdither64(obj.track0,obj.track2,obj.track1,col1,col2)
+
+
+@ClusterDotMatrixDither64OCL
+--track0:RGB,0,1,1,1
+--dialog:–¾/col,local col1=0xffffff;ˆÃ/col,local col2=0x000000;
+package.cpath=package.cpath..";"..obj.getinfo("script_path"):match("(.*\\).*\\").."?.dll"
+local bool, patterndithering = pcall(require, "patterndithering");
+if not bool then obj.load("<s50>oclScripts ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½") obj.draw() return end
+
+patterndithering.cdmdither64OCL(obj.track0, col1, col2)
 
 
 @PosterizeClusterDotMatrixDither64
