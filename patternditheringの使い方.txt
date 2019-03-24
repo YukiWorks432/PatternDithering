@@ -1,49 +1,49 @@
 PatternDither
 
-	Aviutlでディザリング処理をしてくれるスクリプトです。 種類がいろいろあります。
-	画像におけるディザリングとは
-	単純に二値化するのではなく、閾値をピクセルごとに少し変えることによりなるべく自然な結果を返すもの。
-	簡単に言うと”ドットっぽい感じ”を出すことができるスクリプトです。
+	Aviutl�Ńf�B�U�����O���������Ă����X�N���v�g�ł��B ��ނ����낢�날��܂��B
+	�摜�ɂ�����f�B�U�����O�Ƃ�
+	�P���ɓ�l������̂ł͂Ȃ��A臒l���s�N�Z�����Ƃɏ����ς��邱�Ƃɂ��Ȃ�ׂ����R�Ȍ��ʂ�Ԃ����́B
+	�ȒP�Ɍ����Ɓh�h�b�g���ۂ������h���o�����Ƃ��ł���X�N���v�g�ł��B
 	
-インストール
+�C���X�g�[��
 
-	README.meに同意し、
-	patterndithering.dllは patterndithering.anm と同じところか exedit.auf と同じところに、
-	libgcc_s_dw2-1.dll libgomp-1.dll libwinpthread-1.dll は exedit.aufと同じところにおいてください。
+	README.me�ɓ��ӂ��A
+	patterndithering.dll�� patterndithering.anm �Ɠ����Ƃ��납 exedit.auf �Ɠ����Ƃ���ɁA
+	libgcc_s_dw2-1.dll libgomp-1.dll libwinpthread-1.dll �� exedit.auf�Ɠ����Ƃ���ɂ����Ă��������B
 
-スクリプトの説明
+�X�N���v�g�̐���
 BayerDither**
 
-	バイヤー型のディザパターンを用いてディザリングします。おそらく一番有名なパターンです。
-	16は4*4のディザパターンを使ってディザリングします。64は8*8です。
+	�o�C���[�^�̃f�B�U�p�^�[����p���ăf�B�U�����O���܂��B�����炭��ԗL���ȃp�^�[���ł��B
+	16��4*4�̃f�B�U�p�^�[�����g���ăf�B�U�����O���܂��B64��8*8�ł��B
 
 ClusterDotMatrixDither**
 
-	新聞の印刷の際などに用いられるらしいClusterDotMatrixなるパターンを用いてディザリングをします。漫画のトーンのような感じになります。
-	16は4*4のディザパターンを使ってディザリングします。64は8*8です。
+	�V���̈���̍ۂȂǂɗp������炵��ClusterDotMatrix�Ȃ�p�^�[����p���ăf�B�U�����O�����܂��B����̃g�[���̂悤�Ȋ����ɂȂ�܂��B
+	16��4*4�̃f�B�U�p�^�[�����g���ăf�B�U�����O���܂��B64��8*8�ł��B
 
 Posterize**
 
-	二値化ではなく減色をするものです。色をある程度残してドット感を付けることができます。	
+	��l���ł͂Ȃ����F��������̂ł��B�F��������x�c���ăh�b�g����t���邱�Ƃ��ł��܂��B	
 
 **OCL
 
-	GPUを使用して処理を行うものです。こちらの方が比較的高速に動くと思われますが、オンボード環境等、GPUの性能がCPUを下回る場合は効果が発揮されない可能性があります。
-	一部パラメータが削除されていますが、随時対応予定です。
+	GPU���g�p���ď������s�����̂ł��B������̕�����r�I�����ɓ����Ǝv���܂����A�I���{�[�h�����AGPU�̐��\��CPU�������ꍇ�͌��ʂ���������Ȃ��\��������܂��B
+	�ꕔ�p�����[�^���폜����Ă��܂����A�����Ή��\��ł��B
 
 dither5*3
 
-	完全におまけです。参考にしてたサイトに載ってたものをそのまま実装した感じです。縦じま模様のアーティファクトを返します。
+	���S�ɂ��܂��ł��B�Q�l�ɂ��Ă��T�C�g�ɍڂ��Ă����̂����̂܂܎������������ł��B�c���ܖ͗l�̃A�[�e�B�t�@�N�g��Ԃ��܂��B
 
-トラックバーとかの説明
+�g���b�N�o�[�Ƃ��̐���
 	
-	共通:
-		RGB:白黒で処理をするかカラーで処理をするかです。チェックが外れている時は白黒で処理します。
-			トラックバーの場合は0で白黒、1でカラーです。
-	Posterizeじゃないほう:
-		size:ピクセルサイズです。使うとわかりやすいと思いますがいい感じに解像度を下げることができたりできなかったり。
-		alpha:アルファチャンネルに関するオプションです。-1の時はアルファチャンネルもディザイングし、0の際は何もしません。1の時はディザリングの結果、RGBの値が0になったピクセルを透過します。
+	����:
+		RGB:�����ŏ��������邩�J���[�ŏ��������邩�ł��B�`�F�b�N���O��Ă��鎞�͔����ŏ������܂��B
+			�g���b�N�o�[�̏ꍇ��0�Ŕ����A1�ŃJ���[�ł��B
+	Posterize����Ȃ��ق�:
+		size:�s�N�Z���T�C�Y�ł��B�g���Ƃ킩��₷���Ǝv���܂������������ɉ𑜓x�������邱�Ƃ��ł�����ł��Ȃ�������B
+		alpha:�A���t�@�`�����l���Ɋւ���I�v�V�����ł��B-1�̎��̓A���t�@�`�����l�����f�B�U�C���O���A0�̍ۂ͉������܂���B1�̎��̓f�B�U�����O�̌��ʁARGB�̒l��0�ɂȂ����s�N�Z���𓧉߂��܂��B
 
-	Postarize～のほう:
-		Tone:減色した後の色の数です。RGBで別々ですので2の時は2x2x2で8色です。RGBにチェックがついていない場合の2の時は2色です。
-alpha:アルファチャンネルに関するオプションです。0の際は何もせず、1の際はアルファチャンネルもディザリングを行います。
+	Postarize�`�̂ق�:
+		Tone:���F������̐F�̐��ł��BRGB�ŕʁX�ł��̂�2�̎���2x2x2��8�F�ł��BRGB�Ƀ`�F�b�N�����Ă��Ȃ��ꍇ��2�̎���2�F�ł��B
+alpha:�A���t�@�`�����l���Ɋւ���I�v�V�����ł��B0�̍ۂ͉��������A1�̍ۂ̓A���t�@�`�����l�����f�B�U�����O���s���܂��B
